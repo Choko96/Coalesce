@@ -1,0 +1,34 @@
+steps:
+  LOADDATA2-13:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 113
+              stepCounter: 13
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: C1
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOADDATA2') }}
+      name: LOADDATA2
+      schema: ""
+      sqlType: Source
+      table: LOADDATA2
+      type: sourceInput
+    stepCounter: "13"

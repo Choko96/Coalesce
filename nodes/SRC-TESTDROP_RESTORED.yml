@@ -1,0 +1,34 @@
+steps:
+  TESTDROP_RESTORED-23:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 147
+              stepCounter: 23
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: C1
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'TESTDROP_RESTORED') }}
+      name: TESTDROP_RESTORED
+      schema: ""
+      sqlType: Source
+      table: TESTDROP_RESTORED
+      type: sourceInput
+    stepCounter: "23"
